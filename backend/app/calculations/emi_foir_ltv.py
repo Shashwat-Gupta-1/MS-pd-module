@@ -1,0 +1,1 @@
+"""Pure deterministic functions: calculate_emi(principal, rate, tenure), calculate_foir(obligations, net_income), calculate_ltv(loan_amount, collateral_value). No LLM involved. Unit-test this file thoroughly."""

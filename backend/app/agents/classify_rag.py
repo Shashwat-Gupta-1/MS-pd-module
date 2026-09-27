@@ -1,0 +1,1 @@
+"""Agent 2: classifies business/employer category, queries pgvector for the matching profession doc, extracts structured fields (3-state), generates ranked gap questions from the pre-approved bank. Runs iteratively across multiple rounds until the profession checklist is fully covered or the session ends -- no fixed round cap."""

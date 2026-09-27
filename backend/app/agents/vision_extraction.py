@@ -1,0 +1,1 @@
+"""Agent 3: sends photos to the vision-LLM with a constrained fixed-field prompt (machinery_type, approx_count, employee_count_visible, condition). Also runs GPS-cluster confirmation across a visit's photos."""

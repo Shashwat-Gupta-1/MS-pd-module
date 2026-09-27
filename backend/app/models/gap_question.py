@@ -1,0 +1,1 @@
+"""GapQuestion model: pd_session_id FK, question_text, category, round_number, resolved (bool), answer, override_reason (nullable). Multiple rounds per session, capped by checklist coverage or session end, not a fixed round count."""

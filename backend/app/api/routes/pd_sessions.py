@@ -1,0 +1,1 @@
+"""POST /pd-sessions (start, logs consent), POST /pd-sessions/{id}/end (uploads recording, enqueues transcription), GET /pd-sessions/{id}, POST /pd-sessions/{id}/resolve-gap (per round), POST /pd-sessions/{id}/reconfirm-field."""

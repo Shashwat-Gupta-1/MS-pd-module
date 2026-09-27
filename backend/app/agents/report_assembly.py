@@ -1,0 +1,1 @@
+"""Report Assembly Agent: maps every section of MSFincap's PD report template to its data source, fills data-only sections directly, generates constrained narrative sections, applies traceability + bias-language checks, renders final PDF."""
