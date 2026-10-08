@@ -6,7 +6,8 @@ import { Icons } from '../../../components/ui/Icons';
 import { useCaseContext } from '../../../lib/CaseContext';
 
 export default function NewCaseProfile() {
-    const { profileData, setProfileData, navigate } = useCaseContext();
+    const { profileData, setProfileData, navigate, caseId, setCaseId } = useCaseContext();
+    const activeCaseId = caseId || 'APP-2026-9823';
     const [expandedSection, setExpandedSection] = useState<string>('borrower');
 
     const stats = useMemo(() => {
@@ -25,13 +26,61 @@ export default function NewCaseProfile() {
         }));
     };
 
+    const saveApplicationToDB = async (targetId: string) => {
+        try {
+            const borrowerName = profileData.borrower?.fields?.name?.value || "Borrower";
+            const productType = profileData.business?.fields?.category?.value || "Business Loan";
+            await fetch('http://localhost:8000/api/applications', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    id: targetId,
+                    borrower_name: borrowerName,
+                    product_type: productType,
+                }),
+            });
+        } catch (err) {
+            console.warn("Failed to persist application to DB:", err);
+        }
+    };
+
     return (
         <div className="max-w-3xl mx-auto animate-fadeIn pb-20">
             <div className="mb-8">
                 <h2 className="text-2xl font-bold text-slate-800 mb-2">Applicant Profile Check</h2>
                 <p className="text-slate-600">Review CRM details before starting the Personal Discussion.</p>
 
-                <Card className="mt-6 p-4">
+                {/* Application ID Controls & Database Sync Banner */}
+                <Card className="mt-4 p-4 bg-slate-900 text-white border-0 shadow-md">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                        <div>
+                            <label className="text-xs text-slate-400 block font-semibold mb-1">Active Application ID (PostgreSQL Record Key):</label>
+                            <div className="flex items-center gap-2">
+                                <input
+                                    type="text"
+                                    value={activeCaseId}
+                                    onChange={(e) => setCaseId(e.target.value)}
+                                    className="bg-slate-800 border border-slate-700 text-teal-400 font-mono text-sm px-3 py-1.5 rounded-lg focus:ring-2 focus:ring-teal-500 font-bold"
+                                />
+                            </div>
+                        </div>
+
+                        <button
+                            type="button"
+                            onClick={() => {
+                                const newId = `APP-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+                                setCaseId(newId);
+                                saveApplicationToDB(newId);
+                            }}
+                            className="px-3.5 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm transition-all shrink-0 cursor-pointer"
+                        >
+                            <Icons.RotateCcw className="w-3.5 h-3.5" />
+                            <span>Generate New Case ID</span>
+                        </button>
+                    </div>
+                </Card>
+
+                <Card className="mt-4 p-4">
                     <div className="flex justify-between items-center mb-2">
                         <span className="text-sm font-semibold text-slate-700">Profile Completeness</span>
                         <span className="text-sm font-bold text-teal-700">{stats.pct}%</span>
@@ -99,10 +148,37 @@ export default function NewCaseProfile() {
                     );
                 })}
             </div>
-            <div className="flex justify-end pt-4 border-t border-slate-200">
-                <button onClick={() => navigate('/officer/cases/APP-2026-9823/questionnaire')} className="bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-xl font-semibold shadow-sm transition-colors flex items-center gap-2">
-                    Start PD Recording
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-slate-200">
+                <button
+                    type="button"
+                    onClick={async () => {
+                        let targetId = activeCaseId;
+                        if (!targetId || targetId === 'APP-2026-9823') {
+                            targetId = `APP-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+                            setCaseId(targetId);
+                        }
+                        await saveApplicationToDB(targetId);
+                        navigate(`/officer/cases/${targetId}/photos`);
+                    }}
+                    className="w-full sm:w-auto px-5 py-3 rounded-xl border border-teal-600/30 bg-teal-50 text-teal-800 font-semibold text-sm hover:bg-teal-100 transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                >
+                    <Icons.Camera className="w-4 h-4 text-teal-600" />
+                    <span>Go Directly to Required Photos</span>
                 </button>
+
+                <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
+                    <button
+                        type="button"
+                        onClick={async () => {
+                            await saveApplicationToDB(activeCaseId);
+                            navigate(`/officer/cases/${activeCaseId}/questionnaire`);
+                        }}
+                        className="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 rounded-xl font-semibold shadow-sm transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                    >
+                        <span>Start PD Recording</span>
+                        <span className="text-xs bg-slate-700 px-2 py-0.5 rounded-md">Step 2 →</span>
+                    </button>
+                </div>
             </div>
         </div>
     );

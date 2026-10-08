@@ -6,17 +6,21 @@ import { useCaseContext } from '../../lib/CaseContext';
 import { mockCaseDetails } from '../../lib/mockData';
 
 export default function CaseLayout({ children }: { children: React.ReactNode }) {
-    const { currentRoute } = useCaseContext();
+    const { currentRoute, profileData, caseId, navigate } = useCaseContext();
+    const activeCaseId = caseId || mockCaseDetails.id;
+    const borrowerName = profileData.borrower?.fields?.name?.value || mockCaseDetails.borrowerName;
+    const businessCategory = profileData.business?.fields?.category?.value || mockCaseDetails.product;
+
     const stepsConfig = [
         { id: '/officer/new-case', label: 'Profile Verification' },
-        { id: '/officer/cases/APP-2026-9823/questionnaire', label: 'PD Recording' },
-        { id: '/officer/cases/APP-2026-9823/gap-questions', label: 'AI Analysis & Gaps' },
-        { id: '/officer/cases/APP-2026-9823/reconfirm', label: 'Reconfirmations' },
-        { id: '/officer/cases/APP-2026-9823/photos', label: 'Required Photos' },
-        { id: '/officer/cases/APP-2026-9823/review', label: 'Final Review & Submit' }
+        { id: `/officer/cases/${activeCaseId}/questionnaire`, label: 'PD Recording' },
+        { id: `/officer/cases/${activeCaseId}/gap-questions`, label: 'AI Analysis & Gaps' },
+        { id: `/officer/cases/${activeCaseId}/reconfirm`, label: 'Reconfirmations' },
+        { id: `/officer/cases/${activeCaseId}/photos`, label: 'Required Photos' },
+        { id: `/officer/cases/${activeCaseId}/review`, label: 'Final Review & Submit' }
     ];
 
-    const currentIndex = stepsConfig.findIndex(s => s.id === currentRoute);
+    const currentIndex = stepsConfig.findIndex(s => currentRoute === s.id || currentRoute.endsWith(s.id.split('/').pop()!));
 
     return (
         <div className="min-h-screen flex flex-col md:flex-row bg-slate-50">
@@ -25,26 +29,47 @@ export default function CaseLayout({ children }: { children: React.ReactNode }) 
                     <h1 className="text-xl font-bold tracking-tight mb-4 text-teal-400">MSFincap <span className="text-white">PD Assist</span></h1>
                     <div className="bg-slate-800 rounded-lg p-3">
                         <p className="text-xs text-slate-400 uppercase tracking-wider mb-1">Current Case</p>
-                        <p className="font-semibold truncate">{mockCaseDetails.borrowerName}</p>
-                        <p className="text-xs text-slate-400 truncate mt-1">{mockCaseDetails.product}</p>
-                        <p className="text-[10px] text-teal-400 font-mono mt-2">{mockCaseDetails.id}</p>
+                        <p className="font-semibold truncate text-white" suppressHydrationWarning>{borrowerName}</p>
+                        <p className="text-xs text-slate-300 truncate mt-1" suppressHydrationWarning>{businessCategory}</p>
+                        <p className="text-[10px] text-teal-400 font-mono mt-2" suppressHydrationWarning>{activeCaseId}</p>
                     </div>
                 </div>
                 <div className="p-6">
-                    <nav className="space-y-4 md:space-y-6 flex flex-row md:flex-col overflow-x-auto md:overflow-visible pb-4 md:pb-0">
+                    <nav className="space-y-3 md:space-y-4 flex flex-row md:flex-col overflow-x-auto md:overflow-visible pb-4 md:pb-0">
                         {stepsConfig.map((s, idx) => {
                             const isCurrent = currentRoute === s.id;
                             const isPast = currentIndex > idx;
                             return (
-                                <div key={s.id} className="flex items-center md:items-start flex-shrink-0 md:w-full mr-6 md:mr-0">
+                                <button
+                                    key={s.id}
+                                    type="button"
+                                    onClick={() => navigate(s.id)}
+                                    className={`flex items-center md:items-start flex-shrink-0 md:w-full mr-4 md:mr-0 text-left p-2 rounded-xl transition-all cursor-pointer group ${
+                                        isCurrent ? 'bg-slate-800/80 shadow-sm ring-1 ring-teal-500/30' : 'hover:bg-slate-800/40'
+                                    }`}
+                                >
                                     <div className="flex flex-col items-center">
-                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm z-10 transition-colors ${isCurrent ? 'bg-teal-500 text-white ring-4 ring-teal-500/30' : isPast ? 'bg-teal-700 text-white' : 'bg-slate-800 text-slate-500'}`}>
-                                            {isPast ? <Icons.CheckCircle className="w-5 h-5" /> : idx + 1}
+                                        <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs z-10 transition-colors ${
+                                            isCurrent
+                                                ? 'bg-teal-500 text-white ring-4 ring-teal-500/30'
+                                                : isPast
+                                                ? 'bg-teal-700 text-white'
+                                                : 'bg-slate-800 text-slate-400 group-hover:bg-slate-700 group-hover:text-slate-200'
+                                        }`}>
+                                            {isPast ? <Icons.CheckCircle className="w-4 h-4" /> : idx + 1}
                                         </div>
-                                        {idx < stepsConfig.length - 1 && <div className={`hidden md:block w-0.5 h-10 -my-1 ${isPast ? 'bg-teal-700' : 'bg-slate-800'}`}></div>}
+                                        {idx < stepsConfig.length - 1 && (
+                                            <div className={`hidden md:block w-0.5 h-6 -my-0.5 ${isPast ? 'bg-teal-700' : 'bg-slate-800'}`}></div>
+                                        )}
                                     </div>
-                                    <div className="ml-3 hidden md:block mt-1.5"><p className={`font-medium ${isCurrent ? 'text-white' : 'text-slate-400'}`}>{s.label}</p></div>
-                                </div>
+                                    <div className="ml-3 hidden md:block">
+                                        <p className={`font-medium text-xs transition-colors ${
+                                            isCurrent ? 'text-white font-bold' : isPast ? 'text-teal-300' : 'text-slate-400 group-hover:text-slate-200'
+                                        }`}>
+                                            {s.label}
+                                        </p>
+                                    </div>
+                                </button>
                             );
                         })}
                     </nav>
