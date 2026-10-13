@@ -1,0 +1,47 @@
+[
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_govt",
+    "field_name": "confirmation_status",
+    "question_text": "Aapki post permanent/confirmed hai ya abhi probation chal raha hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_govt",
+    "field_name": "pay_grade",
+    "question_text": "Aapka pay grade ya pay level kya hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_govt",
+    "field_name": "retirement_benefit_type",
+    "question_text": "Kya aapko pension ya NPS contribution milta hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_govt",
+    "field_name": "salary_bank",
+    "question_text": "Aapka salary account kis bank mein hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_govt",
+    "field_name": "employment_id_proof",
+    "question_text": "Kya aapke paas government service ID card ya employment proof hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  }
+]

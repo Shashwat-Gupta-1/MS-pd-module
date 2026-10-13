@@ -1,0 +1,25 @@
+{
+  "sub_profile": "SALARIED_PRIVATE",
+  "display_name": "Salaried — Private Sector (Small/Mid-Size Company)",
+  "overview": "Employees of privately-owned businesses without the stability assumptions that apply to government or large corporate employment. Employer stability and payment consistency matter more here than for other salaried categories.",
+  "benchmark_margins_json": {
+    "salary_credence": "Moderate to High",
+    "typical_foir_limit_pct": 50,
+    "min_tenure_months": 12
+  },
+  "required_info_checklist_json": [
+    "employer_industry_and_stability",
+    "salary_payment_consistency_delays",
+    "employment_documentation_offer_appointment",
+    "statutory_benefits_pf_esi",
+    "variable_bonus_pay_component",
+    "total_work_experience_and_job_stability",
+    "employer_employee_count_approx"
+  ],
+  "red_flags_json": [
+    "Salary paid in cash with no formal documentation or slips",
+    "History of irregular or delayed salary disbursements",
+    "Very recent job change with no clear explanation or career rationale",
+    "Employer in a visibly declining or highly seasonal industry with no risk buffer"
+  ]
+}

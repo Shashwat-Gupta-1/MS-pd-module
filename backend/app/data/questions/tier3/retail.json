@@ -1,0 +1,74 @@
+[
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "product_category",
+    "question_text": "Aap apni dukan par mukhya roop se kaun se product bechte hain?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "footfall_pattern",
+    "question_text": "Aapki dukan par rozana lagbhag kitne customers aate hain (daily footfall)?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "supplier_credit_terms",
+    "question_text": "Aap suppliers se maal udhar (credit) par lete hain ya turant cash/online payment karte hain?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "inventory_turnover_rate",
+    "question_text": "Aap dukan mein naya maal kitne dino mein bharte/restock karte hain?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "seasonal_demand_variation",
+    "question_text": "Kya kisi season ya tyohaar ke dauraan bikri mein bada farak aata hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "customer_credit_extended",
+    "question_text": "Kya aap apne regular customers ko udhari (khata credit) dete hain?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "inventory_value",
+    "question_text": "Dukan mein abhi lagbhag kitne rupaye ka stock/maal bhara hua hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "retail",
+    "field_name": "premises_type",
+    "question_text": "Aapki pakki dukan hai ya thela/temporary stall par kaam karte hain?",
+    "data_type": "select",
+    "is_mandatory": true
+  }
+]

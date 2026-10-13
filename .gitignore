@@ -34,6 +34,7 @@ venv.bak/
 .env
 .env.*
 !.env.example
+frontend/.env.local
 
 # Testing & Coverage
 .pytest_cache/
@@ -51,19 +52,50 @@ frontend/.next/
 frontend/out/
 out/
 .turbo/
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
 
-# Logs & Storage
+# Logs & Audit JSONL Trails
 *.log
+backend/logs/
+logs/
+*.jsonl
+*_summary.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Database & Uploads
+# Database & ChromaDB Vector Store
 *.sqlite3
 *.db
+backend/msfincap.db
+backend/chroma_db/
+chroma_db/
+
+# Media Uploads & Audio Recordings
 uploads/
+backend/uploads/
 recordings/
+backend/recordings/
+*.wav
+*.webm
+*.mp3
+*.m4a
+*.avif
+backend/temp_test.wav
+backend/test_mic.wav
+
+# Generated CAM Reports
+*.pdf
+backend/uploads/reports/*.pdf
+backend/uploads/reports/*.html
+
+# Scratch & Temporary Scripts
+scratch/
+scratch_final_build_prompt.txt
+backend/scratch_test_mode1.py
+backend/test_mic_agent1.py
 
 # OS & Editor
 .DS_Store
@@ -73,3 +105,5 @@ desktop.ini
 .vscode/
 *.swp
 *.swo
+.kilo/
+.agents/

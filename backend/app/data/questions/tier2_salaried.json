@@ -1,0 +1,92 @@
+[
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "employer_name",
+    "question_text": "Aap abhi kis company ya sanstha mein kaam karte hain, aur wo kis industry mein hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "designation",
+    "question_text": "Company mein aapka designation ya post kya hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "employer_tenure",
+    "question_text": "Aap is company mein kitne samay se kaam kar rahe hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "employment_stability",
+    "question_text": "Aapki naukri permanent hai ya contract basis par hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "net_salary",
+    "question_text": "Aapki mahine ki in-hand (net) salary kitni aati hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "salary_mode",
+    "question_text": "Aapki salary bank account mein transfer hoti hai ya cash milti hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "employer_size",
+    "question_text": "Aapki company mein lagbhag kitne employee kaam karte hain?",
+    "data_type": "number",
+    "is_mandatory": false
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "employer_type",
+    "question_text": "Aapki company government/PSU hai, private company hai, ya kisi proprietorship firm mein hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "employment_continuity",
+    "question_text": "Kya pichhle 2 saal mein aapki naukri mein koi gap ya break aaya tha?",
+    "data_type": "text",
+    "is_mandatory": false
+  },
+  {
+    "tier": 2,
+    "employment_type": "salaried",
+    "business_category": null,
+    "field_name": "secondary_income",
+    "question_text": "Salary ke alawa kya aapki koi aur aamdani (rental, freelance aadi) hoti hai?",
+    "data_type": "number",
+    "is_mandatory": false
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "requested_amount",
+    "question_text": "Aapko kitna loan amount chahiye, aur is loan ka upyog aap kis kaam ke liye karenge?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "full_name",
+    "question_text": "Aapka poora naam kya hai, aur kya yahi naam aapke PAN/Aadhaar card par likha hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "exact_occupation_details",
+    "question_text": "Aapka mukhya kaam ya vyavsay kya hai, aur aap kis specific product ya service ka vyapar karte hain?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "residential_address",
+    "question_text": "Aapka abhi ka rehaishi pata kya hai, aur aap yahan kitne saal se reh rahe hain?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "residence_ownership",
+    "question_text": "Aapka ghar khud ka apna hai ya kiraye par hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "household_members",
+    "question_text": "Aapke parivar mein aapke saath kaun kaun rehte hain (patni, bachhe, mata-pita, anya)?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "co_earner_present",
+    "question_text": "Kya ghar mein aapke alawa koi aur bhi kamata hai? Agar haan, toh kis kaam se?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "dependents_education_cost",
+    "question_text": "Kya aapke bachhe school ya college ja rahe hain? Unki mahine ki padhai ka kharcha lagbhag kitna hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "monthly_household_expenses",
+    "question_text": "Aapke ghar ka mahine ka kharcha (rashan, bijli, kiraya aadi) lagbhag kitna hota hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "existing_obligations",
+    "question_text": "Kya aapka abhi koi aur loan (personal, gold, vehicle, business) chal raha hai? Kiske paas hai aur mahine ki EMI kitni hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "past_loan_history",
+    "question_text": "Kya aapne pehle koi loan liya tha jo ab band ho chuka hai? Kya unki kist time par chuki thi?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "reference_name",
+    "question_text": "Kya aap kisi aise vyakti ka naam aur number de sakte hain jo aapko acche se janta ho (rishtedaar na ho, padosi ya vyapari ho)?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "emi_comfort_range",
+    "question_text": "Aap aasaani se har mahine kitni EMI bhar sakte hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 1,
+    "employment_type": "all",
+    "business_category": null,
+    "field_name": "employment_type",
+    "question_text": "Aap naukri (salaried) karte hain ya apna khud ka kaam/business (self-employed) karte hain?",
+    "data_type": "select",
+    "is_mandatory": true
+  }
+]

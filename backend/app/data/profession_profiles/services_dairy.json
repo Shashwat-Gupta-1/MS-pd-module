@@ -1,0 +1,29 @@
+{
+  "sub_profile": "SERVICES_DAIRY",
+  "parent_category": "SERVICES",
+  "display_name": "Services — Milk Dairy, Collection & Distribution Center",
+  "overview": "Daily raw milk procurement from local cattle owners/farmers, chilling, fat/SNF testing, and morning/evening doorstep or booth delivery. Highly perishable inventory (daily turn), daily cash/UPI collections, fat/SNF testing pricing model, and bulk sales to sweet makers/cooperatives. Key factors are daily liter volume, refrigeration reliability, and timely payments to dairy farmers.",
+  "benchmark_margins_json": {
+    "gross_margin_pct": [12, 20],
+    "net_margin_pct": [6, 11],
+    "inventory_turns_days": 1,
+    "daily_collection_liters_range": [150, 600]
+  },
+  "required_info_checklist_json": [
+    "monthly_turnover",
+    "net_margin_pct",
+    "daily_milk_procurement_liters",
+    "procurement_vs_selling_price_per_liter",
+    "fat_snf_testing_pricing_model",
+    "chilling_equipment_and_power_backup",
+    "institutional_vs_household_delivery_mix",
+    "farmer_supplier_payout_frequency",
+    "premises_ownership_status"
+  ],
+  "red_flags_json": [
+    "Lack of reliable chilling equipment or power backup risking daily spoilage",
+    "Payment delays to supplying cattle farmers threatening milk supply continuity",
+    "Irregular delivery routes leading to customer attrition to organized dairy brands",
+    "Extreme seasonal fluctuation in milk supply without price buffer"
+  ]
+}

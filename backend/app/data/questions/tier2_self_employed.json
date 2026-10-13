@@ -1,0 +1,92 @@
+[
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "business_activity",
+    "question_text": "Aapka business kis cheez ka hai - aap kya banate, bechte ya service dete hain?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "years_operating",
+    "question_text": "Aap kitne saal se ye specific business chala rahe hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "premises_ownership",
+    "question_text": "Aapki dukan/premises khud ki hai ya kiraye par hai? Agar kiraye par hai, toh mahine ka kiraya kitna hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "employee_count",
+    "question_text": "Aapke yahan aapko milakar kitne log kaam karte hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "monthly_turnover",
+    "question_text": "Lagbhag aapka mahine ka business turnover/bikri (sales) kitni hoti hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "monthly_business_expenses",
+    "question_text": "Business ke bade mahine ke kharche (maal kharid, kiraya, tankhwah, bijli) kitne hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "business_category",
+    "question_text": "Aapka business kis category mein aata hai - retail trading, service, ya manufacturing?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "business_registrations",
+    "question_text": "Kya aapke paas business ka koi registration hai jaise Udyam, GST ya trade license?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "payment_mode",
+    "question_text": "Aapke customers aapko payment cash mein dete hain, online/bank transfer se, ya dono se?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 2,
+    "employment_type": "self_employed",
+    "business_category": null,
+    "field_name": "receivables",
+    "question_text": "Kya market mein customers par aapka udhari ka paisa baaki hai? Lagbhag kitna paisa fasa hua hai?",
+    "data_type": "number",
+    "is_mandatory": false
+  }
+]

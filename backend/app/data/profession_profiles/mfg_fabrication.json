@@ -1,0 +1,28 @@
+{
+  "sub_profile": "MFG_FABRICATION",
+  "parent_category": "MANUFACTURING",
+  "display_name": "Manufacturing — Light Metal Fabrication, Grill & Gate Workshop",
+  "overview": "Iron gates, window grills, steel railings, tin sheds, and structural metal fabrication. Order-driven job work relying on customer advances (40-50% upfront before raw material cutting, balance upon installation). Sourcing raw material steel pipes and angle irons with high price volatility.",
+  "benchmark_margins_json": {
+    "gross_margin_pct": [18, 30],
+    "net_margin_pct": [8, 15],
+    "raw_material_cost_pct": [50, 65],
+    "customer_advance_pct": [40, 50]
+  },
+  "required_info_checklist_json": [
+    "monthly_turnover",
+    "net_margin_pct",
+    "order_pipeline_and_advance_terms",
+    "steel_raw_material_suppliers",
+    "welding_cutting_machinery_condition",
+    "commercial_power_connection_status",
+    "skilled_welder_helper_payroll",
+    "premises_ownership_status"
+  ],
+  "red_flags_json": [
+    "Unfinished delayed customer orders with advance money already consumed",
+    "Commercial electricity disconnection or power theft disputes",
+    "Heavy financial dependency on a single building contractor who defaults",
+    "Inadequate welding ventilation and lack of basic workshop safety gear"
+  ]
+}

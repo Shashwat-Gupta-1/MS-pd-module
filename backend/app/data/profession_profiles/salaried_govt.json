@@ -1,0 +1,22 @@
+{
+  "sub_profile": "SALARIED_GOVT",
+  "display_name": "Salaried — Government / PSU",
+  "overview": "Generally the most stable salaried category, but still requires verification — confirmation status (permanent vs probationary) and pay grade matter more here than employer-stability questions, since the employer itself is assumed stable.",
+  "benchmark_margins_json": {
+    "salary_credence": "Very High",
+    "typical_foir_limit_pct": 60,
+    "pension_eligible": true
+  },
+  "required_info_checklist_json": [
+    "confirmation_status_permanent_vs_probationary",
+    "pay_grade_and_scale",
+    "retirement_benefit_pension_vs_nps",
+    "salary_bank_account_mandate",
+    "employment_id_service_proof"
+  ],
+  "red_flags_json": [
+    "Claiming government job without being able to produce employee ID or payslips",
+    "Contractual or outsourced government-adjacent roles being conflated with permanent government employment",
+    "Suspended or under inquiry status"
+  ]
+}

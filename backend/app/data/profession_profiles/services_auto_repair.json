@@ -1,0 +1,28 @@
+{
+  "sub_profile": "SERVICES_AUTO_REPAIR",
+  "parent_category": "SERVICES",
+  "display_name": "Services — Two-Wheeler / Auto Repair & Servicing Workshop",
+  "overview": "Two-wheeler, three-wheeler, or car repair, mechanical servicing, engine overhaul, puncture/tyre works, and spare parts resale. Revenue is driven by service labor charges plus spare parts markup. High technician skill dependency and repeat neighborhood footfall.",
+  "benchmark_margins_json": {
+    "labor_gross_margin_pct": [35, 50],
+    "spare_parts_gross_margin_pct": [12, 18],
+    "net_margin_pct": [15, 25],
+    "daily_job_cards_count": [5, 15]
+  },
+  "required_info_checklist_json": [
+    "monthly_turnover",
+    "net_margin_pct",
+    "daily_job_card_count",
+    "service_labor_vs_spare_parts_split",
+    "mechanic_helper_payroll",
+    "spare_parts_vendor_credit_cycle",
+    "diagnostic_tools_and_compressor_ownership",
+    "premises_ownership_status"
+  ],
+  "red_flags_json": [
+    "Single-mechanic dependency with no secondary skilled staff or apprentice",
+    "Operating on roadside or unauthorized encroachment risking municipal displacement",
+    "Mounting unpaid customer credit for major vehicle engine overhauls",
+    "Frequent customer disputes regarding faulty repairs or delayed deliveries"
+  ]
+}

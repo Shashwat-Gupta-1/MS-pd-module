@@ -1,0 +1,24 @@
+{
+  "sub_profile": "SERVICES",
+  "display_name": "Services (Tailoring, Salon, Small Repair Shop)",
+  "overview": "Skill/labor-based small services businesses. Revenue is per-job rather than per-product-sale. Equipment investment is typically modest; the main asset is the operator's skill and time.",
+  "benchmark_margins_json": {
+    "gross_margin_pct": [35, 60],
+    "net_margin_pct": [20, 45],
+    "labor_cost_pct": [15, 30]
+  },
+  "required_info_checklist_json": [
+    "service_delivery_model_walkin_vs_contract",
+    "typical_price_range_per_job",
+    "seasonal_demand_pattern_festivals",
+    "equipment_count_and_condition",
+    "staff_assistants_count",
+    "customer_acquisition_repeat_vs_walkin",
+    "weekly_job_volume_capacity"
+  ],
+  "red_flags_json": [
+    "Large gap between stated peak-season and off-season income with no conservative lean-period figure available",
+    "Claimed job volume inconsistent with equipment count or staff capacity",
+    "No distinction made between gross job revenue and net income after materials and supplies"
+  ]
+}

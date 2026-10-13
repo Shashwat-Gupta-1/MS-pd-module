@@ -1,0 +1,26 @@
+{
+  "sub_profile": "RETAIL",
+  "display_name": "Retail / Trading (Kirana, General Store, Boutique)",
+  "overview": "Fixed-location retail selling directly to end consumers. Revenue is driven by footfall and repeat customers rather than large individual orders. Inventory turnover and supplier credit terms are the key financial signals.",
+  "benchmark_margins_json": {
+    "gross_margin_pct": [8, 18],
+    "net_margin_pct": [4, 10],
+    "inventory_turns_days": 20
+  },
+  "required_info_checklist_json": [
+    "product_category_and_price_points",
+    "daily_weekly_footfall_pattern",
+    "inventory_value_and_turnover_rate",
+    "supplier_relationship_and_credit_terms",
+    "seasonal_demand_pattern",
+    "customer_credit_ledger_and_recovery_cycle",
+    "premises_type_fixed_vs_temporary",
+    "competition_density_nearby"
+  ],
+  "red_flags_json": [
+    "Stated inventory value dramatically mismatched with photo evidence of stock on shelves",
+    "Extending significant credit to customers with no ledger or tracking system",
+    "A fixed shop claim that photos show is actually a temporary or mobile setup",
+    "Turnover claims inconsistent with visible shop size or foot traffic during the visit"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "sub_profile": "RETAIL_CLOTH_GARMENTS",
+  "parent_category": "RETAIL",
+  "display_name": "Retail — Cloth, Saree & Readymade Garment Store",
+  "overview": "Apparel, sarees, suiting-shirting, readymade garments, wedding wear, and kids wear. Characterized by higher ticket size, moderate footfall, high seasonal festival and wedding surges (Diwali, Eid, regional wedding seasons driving 2x to 3x normal sales), slower inventory turnover (45-75 days), and dead-stock clearance discounting. Sourcing relies on wholesale hubs (e.g. Surat, Delhi, Ahmedabad, Jaipur) with 30-60 day supplier credit.",
+  "benchmark_margins_json": {
+    "gross_margin_pct": [20, 35],
+    "net_margin_pct": [8, 16],
+    "inventory_turns_days": 60,
+    "seasonal_peak_multiplier": 2.5
+  },
+  "required_info_checklist_json": [
+    "monthly_turnover",
+    "net_margin_pct",
+    "seasonal_festival_wedding_spikes",
+    "dead_stock_discounting_practice",
+    "wholesale_supplier_credit_terms",
+    "customer_alteration_and_credit_ledger",
+    "shop_display_area_and_counter_size",
+    "premises_ownership_status"
+  ],
+  "red_flags_json": [
+    "Heavy accumulation of outdated unsellable seasonal stock occupying more than 40% shelf space",
+    "Disproportionate off-season turnover claims without corresponding wholesale purchase bills",
+    "Wholesaler legal notices or disputes regarding unpaid seasonal credit goods",
+    "High inventory valuation claimed without adequate fire/water safety or insurance in shop"
+  ]
+}

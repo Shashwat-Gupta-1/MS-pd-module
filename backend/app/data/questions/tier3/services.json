@@ -1,0 +1,65 @@
+[
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "services",
+    "field_name": "service_delivery_model",
+    "question_text": "Aapke paas direct walk-in customers aate hain, ya aap kisi shop/firm ke liye contract work karte hain?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "services",
+    "field_name": "typical_job_value",
+    "question_text": "Har ek service ya kaam ka aamtaur par kitna charge/rate hota hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "services",
+    "field_name": "seasonal_demand_variation",
+    "question_text": "Kya kaam ki demand kisi khas season ya tyohaar mein badhti hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "services",
+    "field_name": "equipment_count",
+    "question_text": "Aapke kaam mein kaun se equipment ya tools use hote hain aur kitne hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "services",
+    "field_name": "staff_count",
+    "question_text": "Aap akele kaam karte hain ya aapke paas koi helper/assistant bhi hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "services",
+    "field_name": "customer_acquisition",
+    "question_text": "Naye customers aapke paas kaise aate hain - purane customers, reference, ya walk-in se?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "services",
+    "field_name": "weekly_job_volume",
+    "question_text": "Hafte mein lagbhag kitne orders ya service jobs poore ho jaate hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  }
+]

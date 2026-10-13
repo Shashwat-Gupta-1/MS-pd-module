@@ -1,0 +1,28 @@
+{
+  "sub_profile": "RETAIL_KIRANA",
+  "parent_category": "RETAIL",
+  "display_name": "Retail — Kirana & General Daily Provisions Store",
+  "overview": "Essential groceries, staples, packaged FMCG goods, dairy packets, toiletries, and dry rations. Characterized by high daily footfall, small ticket sizes (Rs. 50 to Rs. 800), rapid inventory turn (12-20 days), and customer credit via physical khata ledger books. Key financial drivers are daily cash/UPI sales volume and supplier distributor payment cycles.",
+  "benchmark_margins_json": {
+    "gross_margin_pct": [8, 15],
+    "net_margin_pct": [4, 8],
+    "inventory_turns_days": 15,
+    "customer_credit_recovery_days": 15
+  },
+  "required_info_checklist_json": [
+    "monthly_turnover",
+    "net_margin_pct",
+    "fast_moving_fmcg_vs_staples_mix",
+    "daily_footfall_count",
+    "khata_customer_credit_recovery_cycle",
+    "supplier_distributor_payment_terms",
+    "refrigeration_and_spoilage_buffer",
+    "premises_ownership_status"
+  ],
+  "red_flags_json": [
+    "Significant customer ledger credit with no regular recovery cycle or mounting bad debts",
+    "Distributor supply halted or shifted to cash-only due to dishonored cheques",
+    "Stated turnover completely inconsistent with visible shelf stock during shop visit",
+    "Lack of basic refrigeration for dairy/perishable items leading to product wastage"
+  ]
+}

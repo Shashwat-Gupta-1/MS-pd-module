@@ -1,0 +1,74 @@
+[
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "machinery_type_count",
+    "question_text": "Aapke paas kaun si machines hain aur kitni machines khud ki hain?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "supplier_sourcing_terms",
+    "question_text": "Raw material kahan se mangwate hain aur payment ki terms kya rehti hain?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "order_type",
+    "question_text": "Aap apna khud ka maal banate hain ya dusri companies ka job-work karte hain?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "regular_customer_count",
+    "question_text": "Aapke lagbhag kitne regular clients ya customers hain?",
+    "data_type": "number",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "typical_order_size",
+    "question_text": "Ek aam order ka size kitna hota hai aur use delivery dene mein kitna samay lagta hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "seasonality",
+    "question_text": "Kya kaam saal bhar lagataar chalta hai ya seasonal rehta hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "secondary_business_income",
+    "question_text": "Kya scrap/wastage bechne se ya kisi aur zariye se koi additional aamdani hoti hai?",
+    "data_type": "text",
+    "is_mandatory": false
+  },
+  {
+    "tier": 3,
+    "employment_type": "self_employed",
+    "business_category": "manufacturing",
+    "field_name": "customer_payment_terms",
+    "question_text": "Customers aamtaur par payment kaise karte hain - cash, bank transfer ya udhari par?",
+    "data_type": "select",
+    "is_mandatory": true
+  }
+]

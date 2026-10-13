@@ -1,0 +1,56 @@
+[
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_private",
+    "field_name": "employer_stability_perception",
+    "question_text": "Aapki company ka business kaisa chal raha hai? Kya pichhle dino koi slowdown ya layoff hua hai?",
+    "data_type": "text",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_private",
+    "field_name": "salary_delay_history",
+    "question_text": "Kya aapki salary aane mein kabhi koi delay ya der hoti hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_private",
+    "field_name": "variable_pay",
+    "question_text": "Kya salary ke alawa aapko koi bonus ya variable pay milta hai?",
+    "data_type": "text",
+    "is_mandatory": false
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_private",
+    "field_name": "employment_documentation",
+    "question_text": "Kya aapke paas company ka offer letter ya appointment letter hai?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_private",
+    "field_name": "statutory_benefits",
+    "question_text": "Kya aapka PF ya ESI cutta hai aur company se statutory benefits milte hain?",
+    "data_type": "select",
+    "is_mandatory": true
+  },
+  {
+    "tier": 3,
+    "employment_type": "salaried",
+    "business_category": "salaried_private",
+    "field_name": "total_work_experience",
+    "question_text": "Pichhli companies ko milakar aapka kul (total) kitne saal ka work experience hai?",
+    "data_type": "number",
+    "is_mandatory": true
+  }
+]
